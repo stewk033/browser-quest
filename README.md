@@ -13,7 +13,7 @@ In this assignment we are...
 * _text here_
 
 ## Concept
-
+![MOCKUP](https://github.com/stewk033/browser-quest/blob/main/assets/20210201_203228.jpg)
 
 ## Solution
 
@@ -23,4 +23,3 @@ Refactored Code:
 * [HTML] 
 * [CSS] 
 * [JS] 
-
