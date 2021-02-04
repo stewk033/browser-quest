@@ -1,0 +1,81 @@
+.container {
+    display: flex;  
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .container > * {
+    padding: 10px;
+    flex: 1 100%;
+  }
+  
+.versus {
+    margin: 20% 40%;
+}
+
+.versus-text {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+  .player-name {
+    background: tomato;
+  }
+
+  .enemy-name {
+    background: tomato;
+  }
+
+  
+  .player-image {
+    text-align: left;
+    background: deepskyblue;
+  }
+  
+  .enemy-image {
+    text-align: left;
+    background: rgb(10, 24, 29);
+  }
+
+  .health {
+    text-align: left;
+    background: gold;
+  }
+  
+  .mana {
+    text-align: left;
+    background: hotpink;
+  }
+
+  .strength {
+    text-align: left;
+      background: chartreuse;
+  }
+  
+    .agility {
+    background: darkblue;
+    text-align: left;
+}
+
+.speed {
+    background: maroon;
+    text-align: left;
+}
+
+  @media all and (min-width: 600px) {
+    .aside { flex: 1 0 0; }
+  }
+  
+  @media all and (min-width: 800px) {
+    .main    { flex: 3 0px; }
+    .aside-1 { order: 1; } 
+    .main    { order: 2; }
+    .aside-2 { order: 3; }
+    .footer  { order: 4; }
+  }
+  
+  body {
+    padding: 2em; 
+  }
