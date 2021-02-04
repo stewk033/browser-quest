@@ -1,3 +1,7 @@
+body {
+    background-color: rgb(28, 29, 31);
+}
+
 .container {
     display: flex;  
     flex-flow: row wrap;
@@ -5,7 +9,8 @@
     text-align: center;
     margin: auto;
     font-family: 'Courier New', Courier, monospace;
-  }
+    border: solid black;
+}
   
   .container > * {
     padding: 10px;
@@ -21,49 +26,64 @@
 }
 
   .player-name {
-    background: tomato;
+    background: rgb(70, 67, 67);
+    border: double rgb(199, 198, 198);
   }
 
   .enemy-name {
-    background: tomato;
+    background: rgb(70, 67, 67);
+    border: double rgb(199, 198, 198);
   }
 
   
   .player-image {
     text-align: left;
-    background: deepskyblue;
+    background: rgb(70, 67, 67);
+    border: double rgb(90, 247, 161);
   }
   
   .enemy-image {
     text-align: left;
-    background: rgb(10, 24, 29);
+    background: rgb(70, 67, 67);
+    border: double rgb(117, 7, 7);
   }
 
   .health {
     text-align: left;
-    background: gold;
+    border: double rgb(199, 198, 198);
+    background: rgb(70, 67, 67);
   }
   
   .mana {
     text-align: left;
-    background: hotpink;
+    border: double rgb(199, 198, 198);
+    background: rgb(70, 67, 67);
+    
   }
 
   .strength {
     text-align: left;
-      background: chartreuse;
+    background: rgb(70, 67, 67);
+    border: double rgb(199, 198, 198);
   }
   
     .agility {
-    background: darkblue;
+        background: rgb(70, 67, 67);
     text-align: left;
+    border: double rgb(199, 198, 198);
 }
 
 .speed {
-    background: maroon;
+    background: rgb(70, 67, 67);
     text-align: left;
+    border: double  rgb(199, 198, 198);
 }
 
+img {
+    max-height: 100%;
+    max-width: 100%;
+    border: double rgb(199, 198, 198);
+}
 
 .fire {
 	margin: 50px auto;
@@ -89,15 +109,16 @@
 
 .Blazing {
 	display: inline-block;
-    margin: auto -60%;
+    margin: auto -150%;
 
 
     color: rgb(255, 115, 0);
-    font-size: 100px;
+    font-size: 60px;
 	line-height: 50px;
 	min-width: 50px;
 	outline: none;
-	vertical-align: middle;
+    vertical-align: middle;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
     
 	text-shadow:
         0 3px 20px red,
@@ -106,7 +127,7 @@
 		4px -5px 6px yellow,
 		-4px -10px 10px yellow,
 		0 -10px 30px yellow;
-	animation: 2s Blazing infinite alternate linear;
+	animation: 1s Blazing infinite alternate linear;
 }
 
 @keyframes Blazing {
