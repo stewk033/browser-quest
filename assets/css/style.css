@@ -8,8 +8,10 @@ body {
     font-weight: bold;
     text-align: center;
     margin: auto;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Cinzel;
     border: solid black;
+    max-width: 50%;
+    max-height: 20%;
 }
   
   .container > * {
@@ -18,16 +20,17 @@ body {
   }
   
 .versus {
-    margin: 20% 40%;
+    margin: 30px 40%;
 }
 
 .versus-text {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Cinzel;
 }
 
   .player-name {
     background: rgb(70, 67, 67);
     border: double rgb(199, 198, 198);
+    font-family: Cinzel;
   }
 
   .enemy-name {
@@ -39,7 +42,7 @@ body {
   .player-image {
     text-align: left;
     background: rgb(70, 67, 67);
-    border: double rgb(90, 247, 161);
+    border: double rgb(56, 74, 245);
   }
   
   .enemy-image {
@@ -52,12 +55,14 @@ body {
     text-align: left;
     border: double rgb(199, 198, 198);
     background: rgb(70, 67, 67);
+    border-bottom: double rgb(228, 12, 12);
   }
   
   .mana {
     text-align: left;
     border: double rgb(199, 198, 198);
     background: rgb(70, 67, 67);
+    border-bottom: double rgb(5, 25, 78);
     
   }
 
@@ -65,23 +70,26 @@ body {
     text-align: left;
     background: rgb(70, 67, 67);
     border: double rgb(199, 198, 198);
+    border-bottom: double rgba(255, 145, 0, 0.822);
   }
   
     .agility {
-        background: rgb(70, 67, 67);
+    background: rgb(70, 67, 67);
     text-align: left;
     border: double rgb(199, 198, 198);
+    border-bottom: double rgb(251, 255, 0);
 }
 
 .speed {
     background: rgb(70, 67, 67);
     text-align: left;
     border: double  rgb(199, 198, 198);
+    border-bottom: double rgb(9, 255, 1);
 }
 
 img {
-    max-height: 100%;
-    max-width: 100%;
+   height: 100%;
+    width: 100%;
     border: double rgb(199, 198, 198);
 }
 
@@ -94,7 +102,7 @@ img {
 	background-position: center center;
 	background-size: 1000px 200px;
 	border-radius: 10px;
-	font-family: 'Akronim';
+	font-family: Cinzel;
 	overflow: hidden;
     text-align: center;
 	vertical-align: middle;
@@ -179,3 +187,58 @@ img {
   body {
     padding: 2em; 
   }
+
+  @media (max-width: 1024px) {
+    .container {
+        display: flex;  
+        flex-flow: row wrap;
+        font-weight: bold;
+        text-align: center;
+        margin: auto;
+        font-family: Cinzel;
+        border: solid black;
+    }
+      
+      .container > * {
+        padding: 10px;
+        flex: 1 100%;
+      }
+    }
+ @media (max-width: 780px) {
+    .container {
+        display: flex;  
+        flex-flow: row wrap;
+        font-weight: bold;
+        text-align: center;
+        margin: auto;
+        font-family: Cinzel;
+        border: solid black;
+    }
+      
+      .container > * {
+        padding: 10px;
+        flex: 1 100%;
+      }
+    }
+ @media (max-width: 480px) {
+    .container {
+        display: flex;  
+        flex-flow: row wrap;
+        font-weight: bold;
+        text-align: center;
+        margin: auto;
+        font-family: Cinzel;
+        border: solid black;
+        
+    }
+      
+      .container > * {
+        padding: 10px;
+        flex: 1 100%;
+      }
+    }
+
+    .versus {
+        margin: 30px 40%;
+    }
+    
