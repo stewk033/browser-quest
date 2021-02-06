@@ -22,7 +22,7 @@ In this assignment we are creating a simple browser based role-playing game that
 * _WHEN I lose a battle_
 * _THEN the game is over_
 * _WHEN the game is over_
-* _THEN I am able to record and view my score_
+* _THEN I have the option to start over_
 
 ## Concept
 ![MOCKUP](https://github.com/stewk033/browser-quest/blob/main/assets/20210201_203228.jpg)
