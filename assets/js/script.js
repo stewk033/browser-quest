@@ -20,6 +20,15 @@ window.onload = function() {
     context.font = "30px Arial";
     context.fillText("Browser Quest", 10, 50);
 }
+window.onresize = function() {
+    // set canvas to adjust with screen size
+    context.canvas.width = window.innerWidth
+    context.canvas.height = window.innerHeight
+    context.drawImage(img, 0, 0, window.innerWidth, window.innerHeight)
+    context.font = "60px Luminari";
+    context.fillStyle = "white";
+    context.fillText("Browser Quest", 10, 50)
+}
 let gameManager = {
     
     setGameStart: function(classType){
