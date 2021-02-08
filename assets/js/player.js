@@ -72,7 +72,7 @@ let playerMoves ={
       player.health = player.health - totalDamage;
       // must remove alert
       alert("You hit" + enemyAttackValues[0]+ "damage"+ enemyAttackValues[1]+"times");
-      if (health.health <=0){
+      if (player.health <=0){
          alert("youwin");
          getEnemyHealth.innerHTML = 'Health: ' + enemy.health;
          getPlayerHealth.innerHTML = 'Health:0';
