@@ -1,7 +1,7 @@
 body {
     background-color: rgb(28, 29, 31);
 }
-
+/* styles for the cards*/
 .container {
     display: flex;  
     flex-flow: row wrap;
@@ -18,19 +18,26 @@ body {
     padding: 10px;
     flex: 1 100%;
   }
+
   
+
+  
+  /* versus text styling*/
 .versus {
-    margin: 30px 40%;
+    margin: 30px 48%;
 }
 
 .versus-text {
     font-family: Cinzel;
 }
 
+/*information in the cards*/
+
   .player-name {
     background: rgb(70, 67, 67);
     border: double rgb(199, 198, 198);
     font-family: Cinzel;
+    height: 10px;
   }
 
   .enemy-name {
@@ -43,6 +50,7 @@ body {
     text-align: left;
     background: rgb(70, 67, 67);
     border: double rgb(56, 74, 245);
+
   }
   
   .enemy-image {
@@ -52,10 +60,13 @@ body {
   }
 
   .health {
-    text-align: left;
+    float:inline-start;
+    text-align:inherit;
     border: double rgb(199, 198, 198);
     background: rgb(70, 67, 67);
     border-bottom: double rgb(228, 12, 12);
+    max-height: 40px;
+
   }
   
   .mana {
@@ -92,6 +103,9 @@ img {
     width: 100%;
     border: double rgb(199, 198, 198);
 }
+
+
+/* versus fire animation*/
 
 .fire {
 	margin: 50px auto;
@@ -138,6 +152,8 @@ img {
 	animation: 1s Blazing infinite alternate linear;
 }
 
+
+
 @keyframes Blazing {
 	0%   { text-shadow: 0 3px 20px red, 0 0 20px red,
 		0 0 10px orange,
@@ -172,37 +188,59 @@ img {
 }
 
 
+
+  
+
+/*media querys*/
   @media all and (min-width: 600px) {
     .aside { flex: 1 0 0; }
   }
   
   @media all and (min-width: 800px) {
-    .main    { flex: 3 0px; }
-    .aside-1 { order: 1; } 
-    .main    { order: 2; }
-    .aside-2 { order: 3; }
-    .footer  { order: 4; }
+    .health   { flex: 3 0px; }
+    .mana { order: 1; } 
+    .strength    { order: 2; }
+    .agility { order: 3; }
+    .speed  { order: 4; }
   }
   
   body {
     padding: 2em; 
   }
 
-  @media (max-width: 1024px) {
+  @media (min-width: 1024px) {
+
+
+
     .container {
         display: flex;  
-        flex-flow: row wrap;
+        justify-content: left;
+        flex-flow:row;
         font-weight: bold;
-        text-align: center;
-        margin: auto;
+        text-align: left;
+        margin: auto -20px auto -20px;
         font-family: Cinzel;
         border: solid black;
+        flex-direction: row;
     }
       
       .container > * {
         padding: 10px;
         flex: 1 100%;
       }
+      .versus {
+        margin: 10px 26%;
+    }
+    .section {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-flow: row;
+        flex: left;
+    
+    }
+   
+    
     }
  @media (max-width: 780px) {
     .container {
@@ -219,8 +257,12 @@ img {
         padding: 10px;
         flex: 1 100%;
       }
+      .versus {
+        margin: 30px 46%;
     }
- @media (max-width: 480px) {
+    
+    }
+ @media (min-width: 480px) {
     .container {
         display: flex;  
         flex-flow: row wrap;
@@ -230,15 +272,39 @@ img {
         font-family: Cinzel;
         border: solid black;
         
+        
     }
       
       .container > * {
         padding: 10px;
         flex: 1 100%;
       }
+      .versus {
+        margin: 30px 45%;
+    }
+    .Blazing {
+        display: inline-block;
+        margin: auto -150%;
+    
+    
+        color: rgb(255, 115, 0);
+        font-size: 40px;
+        line-height: 50px;
+        min-width: 50px;
+        outline: none;
+        vertical-align: middle;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        
+        text-shadow:
+            0 3px 20px red,
+            0 0 20px red,
+            0 0 10px orange,
+            4px -5px 6px yellow,
+            -4px -10px 10px yellow,
+            0 -10px 30px yellow;
+        animation: 1s Blazing infinite alternate linear;
+    }
+    
     }
 
-    .versus {
-        margin: 30px 40%;
-    }
     
