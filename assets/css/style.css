@@ -231,14 +231,7 @@ img {
       .versus {
         margin: 10px 26%;
     }
-    .section {
-        width: 80%;
-        height: 100%;
-        display: flex;
-        flex-flow: row;
-        flex: left;
-    
-    }
+   
    
     
     }
