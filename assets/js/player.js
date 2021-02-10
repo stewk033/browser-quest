@@ -45,7 +45,7 @@ let playerMoves ={
       let totalDamage = playerAttackValues[0] * playerAttackValues[1];
       enemy.health = enemy.health - totalDamage;
       // must remove alert
-      alert("You hit" + playerAttackValues[0]+ "damage"+ playerAttackValues[1]+"times");
+      alert("You hit" + playerAttackValues[0]+ " damage"+ playerAttackValues[1]+" times");
       if (enemy.health <=0){
          alert("youwin");
          getPlayerHealth.innerHTML = 'Health: ' + player.health;
@@ -56,7 +56,7 @@ let playerMoves ={
          let totalDamage = enemyAttackValues[0] * enemyAttackValues[1];
       player.health = player.health - totalDamage;
       // must remove alert
-      alert("You hit" + enemyAttackValues[0]+ "damage"+ enemyAttackValues[1]+"times");
+      alert("You hit" + enemyAttackValues[0]+ " damage"+ enemyAttackValues[1]+" times");
       if (player.health <=0){
          alert("youlose");
          getPlayerHealth.innerHTML = 'Health:0';
@@ -71,7 +71,7 @@ let playerMoves ={
       let totalDamage = enemyAttackValues[0] * enemyAttackValues[1];
       player.health = player.health - totalDamage;
       // must remove alert
-      alert("You hit" + enemyAttackValues[0]+ "damage"+ enemyAttackValues[1]+"times");
+      alert("You hit" + enemyAttackValues[0]+ " damage"+ enemyAttackValues[1]+" times");
       if (player.health <=0){
          alert("youwin");
          getEnemyHealth.innerHTML = 'Health: ' + enemy.health;
@@ -82,7 +82,7 @@ let playerMoves ={
          let totalDamage = playerAttackValues[0] * playerAttackValues[1];
       enemy.health = enemy.health - totalDamage;
       // must remove alert
-      alert("You hit" + playerAttackValues[0]+ "damage"+ playerAttackValues[1]+"times");
+      alert("You hit" + playerAttackValues[0]+ " damage"+ playerAttackValues[1]+" times");
       if (enemy.health <=0){
          alert("youlose");
          getEnemyHealth.innerHTML = 'Health:0';
