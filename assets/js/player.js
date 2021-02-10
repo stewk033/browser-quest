@@ -1,4 +1,6 @@
+//puts player into the global scope
 let player;
+//sets player stats
 function Player(classType, health, mana, strength, agility, speed){
    this.classType = classType;
    this.health = health;
@@ -7,8 +9,9 @@ function Player(classType, health, mana, strength, agility, speed){
    this.agility = agility;
    this.speed = speed;
 }
-
+//allows player to attack 
 let playerMoves ={
+   // calcualates attack damage then adds a random number to create attack
    calAttack: function() {
        let getPlayerSpeed = player.speed;
        let getEnemySpeed = enemy.speed;
@@ -25,6 +28,7 @@ let playerMoves ={
          let attackValues = [calOutputDamage,numberOfHits];
          return attackValues;
       }
+//calculates attack for enemy
       let enemyAttack = function() {
          let calBaseDamage;
          if (enemy.mana >0){
@@ -38,6 +42,7 @@ let playerMoves ={
          let attackValues = [calOutputDamage,numberOfHits];
          return attackValues;
    }
+   //
    let getPlayerHealth = document.querySelector(".health-player");
    let getEnemyHealth = document.querySelector(".health-enemy");
    if (getPlayerSpeed >= getEnemySpeed) {

@@ -1,6 +1,6 @@
 let enemy;
 
-
+//sets enemy type and various stats
 function Enemy(enemyType, health, mana, strength, agility, speed){
     this.enemyType = enemyType;
     this.health = health;
