@@ -37,7 +37,6 @@ body {
     background: rgb(70, 67, 67);
     border: double rgb(199, 198, 198);
     font-family: Cinzel;
-    height: 10px;
   }
 
   .enemy-name {
@@ -61,7 +60,7 @@ body {
 
   .health {
     float:inline-start;
-    text-align:inherit;
+    text-align:left;
     border: double rgb(199, 198, 198);
     background: rgb(70, 67, 67);
     border-bottom: double rgb(228, 12, 12);
