@@ -141,10 +141,17 @@ var startGame = function() {
 //fight function
 var fight = function(currentEnemy, i) {
 
-    //player health based on current enemy !!NEEDS to be moved to own function just in case player skips!
+    //player stats based on current enemy !!NEEDS to be moved to own function just in case player skips!
     console.log(i)
     playerInfo.health = 100
     playerInfo.health = playerInfo.health + (20 * i);
+    playerInfo.attack = 25;
+    playerInfo.attack = playerInfo.attack + (5 * i)
+    playerInfo.defense = 15;
+    playerInfo.defense = playerInfo.defense + (5 * i)
+    playerInfo.speed = 50;
+    playerInfo.speed = playerInfo.speed + (5 * i)
+
     console.log(playerInfo.health)
 
   var isPlayerTurn = true;
