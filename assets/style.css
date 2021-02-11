@@ -1,5 +1,17 @@
 body {
     padding: 0;
     margin: 0;
+<<<<<<< HEAD
     
+=======
+}
+canvas{
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:-1;
+ }
+img {
+    width: 160px;
+>>>>>>> a78e9085931789060c1c70a9c5619906120b1c01
 }
