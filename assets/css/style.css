@@ -19,13 +19,13 @@ body {
     flex: 1 100%;
   }
 
-  
+  .hidecards {
+    display:hidden;
+  }
 
   
   /* versus text styling*/
-.versus {
-    margin: 30px 48%;
-}
+
 
 .versus-text {
     font-family: Cinzel;
@@ -189,7 +189,9 @@ img {
 
 
 
-  
+.versus {
+  margin: 30px 48%;
+}
 
 /*media querys*/
   @media all and (min-width: 600px) {
@@ -228,9 +230,7 @@ img {
         padding: 10px;
         flex: 1 100%;
       }
-      .versus {
-        margin: 10px 26%;
-    }
+    
    
    
     
@@ -250,9 +250,7 @@ img {
         padding: 10px;
         flex: 1 100%;
       }
-      .versus {
-        margin: 30px 46%;
-    }
+    
     
     }
  @media (min-width: 480px) {
@@ -272,9 +270,9 @@ img {
         padding: 10px;
         flex: 1 100%;
       }
-      .versus {
-        margin: 30px 45%;
-    }
+      
+    
+
     .Blazing {
         display: inline-block;
         margin: auto -150%;
