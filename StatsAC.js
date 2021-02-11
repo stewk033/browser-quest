@@ -101,7 +101,7 @@ var startGame = function() {
     playerInfo.reset();
     console.log(playerInfo)
   
-    //loop to get you to fight the robots until you or they are dead.
+    
     for (i = 0; i < enemyInfo.length; i++) {
         if (playerInfo.health > 0){
   
@@ -110,16 +110,7 @@ var startGame = function() {
             console.log(currentEnemy)
   
             fight(currentEnemy, i);
-            //if (i < enemyInfo.length - 1 && playerInfo.health > 0) {
-              //}
-          //  }
-            
-       // } else {
-        //    window.alert("You have lost your robot in battle! Game Over!");
-       //     break;
-       // }
         }
-    //endGame();
     };
 };
 
