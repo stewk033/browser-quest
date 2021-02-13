@@ -2,10 +2,124 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- link to google font api-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel">
+    <link rel="stylesheet" href="./Assets/style/style.css">
+    <script src="./Assets/JS/player.js"></script>
+    <script src="./Assets/JS/enemy.js"></script>
+
+    <title>Browser Quest</title>
 </head>
 <body>
+    <canvas id="canvas"></canvas>
+    <div style="display:none;">
+    <img id="source"
+        src="./assets/images/fantasy-world-background-1.jpg" width="1600" height="1600">
+    </div>
+   
+
+    <div class="hero">
+        <a href="#"onclick="gameManager.setGameStart('Minotaur')">
+            <img src="./Assets/images/minotaur.jpg"alt="minotaur">
+            <div>
+               <h3>Minotaur</h3> 
+               <p>placeholder txt</p>
+            </div>
+        </a>
+        <a href="#"onclick="gameManager.setGameStart('Satyr')">
+            <img src="./Assets/images/satyr.jpg"alt="satyr">
+            <div>
+               <h3>Satyr</h3> 
+               <p>placeholder txt</p>
+            </div>
+        </a>
+        <a href="#"onclick="gameManager.setGameStart('Quillboar')">
+            <img src="Assets/images/quillboar.jpg"alt="quillboar">
+            <div>
+               <h3>Quillboar</h3> 
+               <p>placeholder txt</p>
+            </div>
+        </a>
+    </div>
     
+
+
+
+
+<div class="enemy">
+
+</div>
+
+   
+    <div class="section">
+    <div class="container">
+        <name class="player-name">Name</name>
+        <article class="player-image">
+        </article>
+        <aside class="aside health">health:
+            <div class=playerhealth>
+            </div>
+        </aside>
+        <aside class="aside mana">mana
+            <div class=playermana>
+            </div>
+        </aside>
+        <aside class="aside strength">strength 
+            <div class=playerstrength>
+        </div></aside>
+        <aside class="aside agility">agility
+            <div class=playeragility>
+            </div>
+        </aside>
+        <footer class="aside speed">speed
+            <div class=playerspeed>
+            </div>
+        </footer>
+      </div>
+
+      <!--versus text-->
+<div class="versus">
+
+    <div class="Blazing">
+        
+    </div>
+</div>
+    
+   <div class="arena"></div>
+
+      <div class="container">
+        <name class="enemy-name">name</name>
+        <article class="enemy-image">
+            <div class=enemy-image>
+            </div>
+        </article>
+        <aside class="aside health">health
+            <div class=enemyhealth>
+            </div>
+        </aside>
+        <aside class="aside mana">mana
+            <div class=enemymana>
+            </div>
+        </aside>
+        <aside class="aside strength">strength
+            <div class=enemystrength>
+            </div>
+        </aside>
+        <aside class="aside agility">agility
+            <div class=enemyagility>
+            </div>
+        </aside>
+        <aside class="aside speed">speed
+            <div class=enemyspeed>
+            </div>
+        </aside>
+      </div>
+      </div>
+
+
+      <script src="./Assets/JS/Script.js"></script>
 </body>
 </html>
