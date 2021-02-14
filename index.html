@@ -10,10 +10,20 @@
     <link rel="stylesheet" href="./Assets/style/style.css">
     <script src="./Assets/JS/player.js"></script>
     <script src="./Assets/JS/enemy.js"></script>
-
+    <script type='module' src='//www.midijs.net/lib/midi.js'></script>
     <title>Browser Quest</title>
 </head>
 <body>
+
+    <body onload="MIDIjs.play('./assets/Midi/Situation.mid')">	
+		<h1>Autoplaying hinematov.mid ...</h1>
+		<div>Reload page to start again. Note: This does not work for some browsers (iOS, Chrome version 71ff), 
+		     i.e. in this case you will not hear anything.</div>
+		<p>
+		<a href="javascript:MIDIjs.stop()">Stop playing</a>
+	
+
+</p></body>
     <canvas id="canvas"></canvas>
     <div style="display:none;">
     <img id="source"
@@ -121,5 +131,6 @@
 
 
       <script src="./Assets/JS/Script.js"></script>
+      
 </body>
 </html>
