@@ -1,7 +1,13 @@
-//puts player into the global scope
+//modal varible
+var modalBg = document.querySelector('modal-bg');
+   //modal display function
+   function modalDisplay (){
+      modalBg.classList.add('bg-active');
+      }
+ //puts player into the global scope
 let player;
 //sets player stats
-function Player(classType, health, mana, strength, agility, speed){
+   function Player(classType, health, mana, strength, agility, speed){
    this.classType = classType;
    this.health = health;
    this.mana = mana;
@@ -42,37 +48,32 @@ let playerMoves ={
          let attackValues = [calOutputDamage,numberOfHits];
          return attackValues;
    }
-  //
+   //
    let getPlayerHealth = document.querySelector(".playerhealth");
    let getEnemyHealth = document.querySelector(".enemyhealth");
    if (getPlayerSpeed >= getEnemySpeed) {
       let playerAttackValues = playerAttack();
       let totalDamage = playerAttackValues[0] * playerAttackValues[1];
       enemy.health = enemy.health - totalDamage;
-      // must remove alert
-     
-    //  alert("You hit" + playerAttackValues[0]+ " damage"+ playerAttackValues[1]+" times");
+
       if (enemy.health <=0){
-      //   alert("you win");
-         
-         getPlayerHealth.innerHTML = player.health;
+         alert("youwin");
+         getPlayerHealth.innerHTML =  player.health;
          getEnemyHealth.innerHTML = '0';
+         modalDisplay();
       } else{
-         getEnemyHealth.innerHTML = enemy.health;
+         getEnemyHealth.innerHTML =  enemy.health;
          let enemyAttackValues = enemyAttack();
          let totalDamage = enemyAttackValues[0] * enemyAttackValues[1];
       player.health = player.health - totalDamage;
-      // must remove alert
-     
-     // alert("You hit" + enemyAttackValues[0]+ " damage"+ enemyAttackValues[1]+" times");
+  
       if (player.health <=0){
-      //   alert("you lose");
-        
-        
+         alert("youlose");
          getPlayerHealth.innerHTML = '0';
          getEnemyHealth.innerHTML =  enemy.health;
+         modalDisplay();
       }else{
-         getPlayerHealth.innerHTML =  player.health;
+         getPlayerHealth.innerHTML = player.health;
       }
       }
    }
@@ -80,32 +81,24 @@ let playerMoves ={
       let enemyAttackValues = enemyAttack();
       let totalDamage = enemyAttackValues[0] * enemyAttackValues[1];
       player.health = player.health - totalDamage;
-    
-      // must remove alert
-     // alert("You hit" + enemyAttackValues[0]+ " damage"+ enemyAttackValues[1]+" times");
+
       if (player.health <=0){
-         let youLose = document.getElementById('loss');
-         youLose.style.visibility("visible");
-        // alert("you win");
-        // alert("you lose");
-    
-         getEnemyHealth.innerHTML =  enemy.health;
-         getPlayerHealth.innerHTML = '0';
+         alert("youlose");
+         getEnemyHealth.innerHTML = enemy.health;
+         getPlayerHealth.innerHTML = '';
+         modalDisplay();
       } else{
-         getPlayerHealth.innerHTML = Player.health;
+         getPlayerHealth.innerHTML = player.health;
          let playerAttackValues = playerAttack();
          let totalDamage = playerAttackValues[0] * playerAttackValues[1];
       enemy.health = enemy.health - totalDamage;
+   
     
-      // must remove alert
-     // alert("You hit" + playerAttackValues[0]+ " damage"+ playerAttackValues[1]+" times");
       if (enemy.health <=0){
-         let youWin = document.getElementById('win');
-         youWin.style.visibility("visible");
-        // alert("you win");
-       
+         alert("youwin");
          getEnemyHealth.innerHTML = '0';
          getPlayerHealth.innerHTML =  player.health;
+         modalDisplay();
       }else{
          getEnemyHealth.innerHTML =  enemy.health;
       }
