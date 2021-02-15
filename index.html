@@ -14,7 +14,7 @@
     <title>Browser Quest</title>
 </head>
 <body>
-
+<!--music?-->
     <body onload="MIDIjs.play('./assets/Midi/Situation.mid')">	
 		<h1>Autoplaying hinematov.mid ...</h1>
 		<div>Reload page to start again. Note: This does not work for some browsers (iOS, Chrome version 71ff), 
@@ -24,13 +24,14 @@
 	
 
 </p></body>
+<!--background image-->
     <canvas id="canvas"></canvas>
     <div style="display:none;">
     <img id="source"
         src="./assets/images/fantasy-world-background-1.jpg" width="1600" height="1600">
     </div>
    
-
+<!--character selection-->
     <div class="hero">
         <a href="#"onclick="gameManager.setGameStart('Minotaur')">
             <img src="./Assets/images/minotaur.jpg"alt="minotaur">
@@ -63,7 +64,7 @@
 
 </div>
 
-   
+   <!--player card-->
     <div class="section">
     <div class="container">
         <name class="player-name">Name</name>
@@ -99,7 +100,7 @@
 </div>
     
    <div class="arena"></div>
-
+<!--enemy card-->
       <div class="container">
         <name class="enemy-name">name</name>
         <article class="enemy-image">
