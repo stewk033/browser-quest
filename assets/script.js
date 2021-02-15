@@ -41,3 +41,4 @@ window.onresize = function() {
     context.fillStyle = "white";
     context.fillText("Browser Quest", 10, 50)
 }
+
