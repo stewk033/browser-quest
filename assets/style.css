@@ -1,5 +1,50 @@
 body {
     padding: 0;
     margin: 0;
+}
+
+canvas {
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:-1;
+ }
+
+img {
+    width: 160px;
+    border-radius: 5%;
+    box-shadow: 5px 5px 5px black;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    text-align: center;
+}
+
+label, input {
+    font-size: xx-large;
+    position: relative; margin: 0px 0px 0px 30px
+}
+
+button {
+    font-size: xx-large;
+    color: blue;
     
+}
+
+.random {
+    font-size: large;
+    position: relative; margin: 20px 0px 0px 30px
+}
+
+form, h1, h2, h3, p {
+    color: white;
+    font-family: sans-serif;
+    text-shadow: 2px 2px 2px black;
+
 }

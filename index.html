@@ -3,18 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browserquest</title>
+    <link href="https://fonts.googleapis.com/css?family=Acme"
+    rel="sylesheet">
     <link rel="stylesheet" href="./assets/style.css">
-    <title>Browser Quest</title>
+
 </head>
 <body>
     <canvas id="canvas"></canvas>
     <div style="display:none;">
-    <img id="source1"
-        src="./assets/SeekPng.com_fire-png_50438.png" width="1600" height="1600">
     <img id="source"
         src="./assets/fantasy-world-background-1.jpg" width="1600" height="1600">
     </div>
+   <div class="header">
+    <h2>Pick your Hero</h2>
+   </div>
 
-    <script src="./assets/script.js"></script>
+   <div class="hero">
+    <a href="#"onclick="gameManager.setGameStart('Minotaur')">
+        <img src="./Assets/images/minotaur.jpg"alt="minotaur">
+        <div>
+           <h3>Minotaur</h3> 
+           <p>placeholder txt</p>
+        </div>
+    </a>
+    <a href="#"onclick="gameManager.setGameStart('Satyr')">
+        <img src="./Assets/images/satyr.jpg"alt="satyr">
+        <div>
+           <h3>Satyr</h3> 
+           <p>placeholder txt</p>
+        </div>
+    </a>
+    <a href="#"onclick="gameManager.setGameStart('Quillboar')">
+        <img src="Assets/images/quillboar.jpg"alt="quillboar">
+        <div>
+           <h3>Quillboar</h3>
+           <p>placeholder txt</p>
+        </div>
+    </a>
+</div>
+
+<div class="enemy">
+
+</div>
+
+   
+    <div class="section">
+    <div class="container">
+        <name class="player-name">Name</name>
+        <article class="player-image">
+        </article>
+        <aside class="aside health">health:
+            <div class=playerhealth>
+            </div>
+        </aside>
+        <aside class="aside mana">mana
+            <div class=playermana>
+            </div>
+        </aside>
+        <aside class="aside strength">strength 
+            <div class=playerstrength>
+        </div></aside>
+        <aside class="aside agility">agility
+            <div class=playeragility>
+            </div>
+        </aside>
+        <footer class="aside speed">speed
+            <div class=playerspeed>
+            </div>
+        </footer>
+      </div>
+
+      <!--versus text-->
+<div class="versus">
+
+    <div class="Blazing">
+        
+    </div>
+</div>
+    
+   <div class="arena"></div>
+
+      <div class="container">
+        <name class="enemy-name">name</name>
+        <article class="enemy-image">
+            <div class=enemy-image>
+            </div>
+        </article>
+        <aside class="aside health">health
+            <div class=enemyhealth>
+            </div>
+        </aside>
+        <aside class="aside mana">mana
+            <div class=enemymana>
+            </div>
+        </aside>
+        <aside class="aside strength">strength
+            <div class=enemystrength>
+            </div>
+        </aside>
+        <aside class="aside agility">agility
+            <div class=enemyagility>
+            </div>
+        </aside>
+        <aside class="aside speed">speed
+            <div class=enemyspeed>
+            </div>
+        </aside>
+      </div>
+      </div>
+
+<form id="avatar-name">
+    <label for="playerName">Please Name Your Hero:</label><br>
+    <input type="text" id="saved-name" name="saved-name"><button type="submit">Save</button><br>
+    <button id="random">Random Name</button>
+</form>
+<ol id="name-list"></ol>
+
+<div class="actions">
+
+</div>
+
+    <script src="./assets/js/script.js"></script>    
+    <script src="./assets/js/player.js"></script>
+    <script src="./assets/js/enemy.js"></script>
+    
 </body>
 </html>
