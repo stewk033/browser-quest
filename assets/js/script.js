@@ -4,6 +4,9 @@ const canvas = document.getElementById('canvas');
 const context = canvas.getContext('2d');
 const img = document.getElementById('source');
 const img1 = document.getElementById('source1');
+const avatarName = document.querySelector('#avatar-name');
+const savedName = document.querySelector('#saved-name');
+const nameList = document.querySelector('#name-list');
 
 window.onload = function() {
     
@@ -26,7 +29,25 @@ window.onresize = function() {
     context.fillStyle = "white";
     context.fillText("Browser Quest", 10, 50)
 }
+avatarName.addEventListener('submit', function (event) {
+    event.preventDefault();
 
+    if (event.target["saved-name"].value.length < 1) return;
+    localStorage.setItem("character", event.target["saved-name"].value);
+    event.target["saved-name"].value = '';
+    console.log(localStorage.getItem ("character"))
+    // removes form once submitted
+    avatarName.style = "display:none;"
+    
+}, false);
+
+document.getElementById("random").addEventListener("click", function (event) {
+    var randomName = ["Zed", "Guildor", "Rigby", "Merlin", "Allanon", "Ganondorf", "Zemenar", "Evard", "Radagast", "Gereth", "Alodar", "Thulsa", "Caecilius", "Kvothe", "Jozef", "Lucius", "Venkalth", "Viktor", "Sepitus", "Theoden", "Vome", "Bludwan", "Zul", "Cinder", "Nightshade", "Aerislore"];
+    localStorage.setItem("character", randomName[Math.floor(Math.random() * randomName.length)]);
+    // randomName.filter((e,i) => i === Math.floor(Math.random() * randomName.length))[0] = '';
+    console.log(localStorage.getItem ("character"))
+    avatarName.style = "display:none;"
+})
 
 // when a character is chosen the game manager function  sets the hero 
 let gameManager = {
@@ -49,7 +70,8 @@ let gameManager = {
         break;
         }
         // changes hero div to the selected character
-        // player name
+        let getHeroName = document.querySelector(".player-name");
+        getHeroName.innerHTML = localStorage.getItem ("character");
         let getHeroImg = document.querySelector(".player-image");
         getHeroImg.innerHTML = '<img src="./assets/images/'+
         classType.toLowerCase() + '.jpg" class="image-avatar">';
