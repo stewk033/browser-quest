@@ -235,14 +235,16 @@ img {
 
   @media (max-width: 1024px) {
     .container {
-        display: flex;  
-        flex-flow: row wrap;
-        font-weight: bold;
-        text-align: center;
-        margin: auto;
-        font-family: Cinzel;
-        border: solid black;
-    }
+      display:flex;  
+      flex-flow: column wrap;
+      font-weight: bold;
+      text-align: center;
+      margin: auto;
+      font-family: Cinzel;
+      border: solid black;
+      max-width: 20%;
+      max-height: 20%;
+  }
       
       .container > * {
         padding: 10px;
@@ -250,15 +252,17 @@ img {
       }
     }
  @media (max-width: 780px) {
-    .container {
-        display: flex;  
-        flex-flow: row wrap;
-        font-weight: bold;
-        text-align: center;
-        margin: auto;
-        font-family: Cinzel;
-        border: solid black;
-    }
+  .container {
+    display:flex;  
+    flex-flow: column wrap;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    font-family: Cinzel;
+    border: solid black;
+    max-width: 20%;
+    max-height: 20%;
+}
       
       .container > * {
         padding: 10px;
@@ -266,16 +270,17 @@ img {
       }
     }
  @media (max-width: 480px) {
-    .container {
-        display: flex;  
-        flex-flow: row wrap;
-        font-weight: bold;
-        text-align: center;
-        margin: auto;
-        font-family: Cinzel;
-        border: solid black;
-        
-    }
+  .container {
+    display:flex;  
+    flex-flow: column wrap;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    font-family: Cinzel;
+    border: solid black;
+    max-width: 20%;
+    max-height: 20%;
+}
       
       .container > * {
         padding: 10px;
