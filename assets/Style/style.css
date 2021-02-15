@@ -1,6 +1,12 @@
 body {
   background-color: rgb(28, 29, 31);
+  text-decoration: white;
 }
+
+a {
+color:ivory;
+}
+
 canvas{
   position:absolute;
   left:0;
@@ -39,15 +45,31 @@ img {
   flex-direction: column;
 }
 .container {
-  display: flex;  
-  flex-flow: row wrap;
+  display:flex;  
+  flex-flow: column wrap;
   font-weight: bold;
   text-align: center;
   margin: auto;
   font-family: Cinzel;
   border: solid black;
-  max-width: 50%;
+  max-width: 20%;
   max-height: 20%;
+}
+
+.aside {
+max-width: 100%;
+}
+
+.footer {
+max-width: 100%;
+}
+
+.header {
+max-width: 100%;
+}
+
+.player-name {
+max-width: 100%;
 }
 
 .container > * {
@@ -56,7 +78,7 @@ img {
 }
 
 .versus {
-  margin: 30px 48%;
+  margin: 30px 48.5%;
 }
 
 .versus-text {
@@ -76,18 +98,19 @@ img {
 
 
 .player-image {
+  text-align: left;
   background: rgb(70, 67, 67);
   border: double rgb(56, 74, 245);
-  max-width: 350px ;
-  max-height: 500px ;
+  max-width:100%;
+  max-height:100%;
 }
 
 .enemy-image {
   text-align: left;
   background: rgb(70, 67, 67);
   border: double rgb(117, 7, 7);
-  max-width: 350px ;
-  max-height: 500px ;
+  max-width:100%;
+  max-height:100%;
 }
 
 .health {
@@ -95,6 +118,7 @@ img {
   border: double rgb(199, 198, 198);
   background: rgb(70, 67, 67);
   border-bottom: double rgb(228, 12, 12);
+  max width: 100%;
 }
 
 .mana {
@@ -102,6 +126,7 @@ img {
   border: double rgb(199, 198, 198);
   background: rgb(70, 67, 67);
   border-bottom: double rgb(5, 25, 78);
+  max-width: 100%;
   
 }
 
@@ -110,6 +135,7 @@ img {
   background: rgb(70, 67, 67);
   border: double rgb(199, 198, 198);
   border-bottom: double rgba(255, 145, 0, 0.822);
+  max-width: 100%;
 }
 
   .agility {
@@ -117,6 +143,7 @@ img {
   text-align: left;
   border: double rgb(199, 198, 198);
   border-bottom: double rgb(251, 255, 0);
+  max-width: 100%;
 }
 
 .speed {
@@ -124,6 +151,7 @@ img {
   text-align: left;
   border: double  rgb(199, 198, 198);
   border-bottom: double rgb(9, 255, 1);
+  max-width: 100%;
 }
 
 img {
@@ -235,14 +263,16 @@ body {
 
 @media (max-width: 1024px) {
   .container {
-      display: flex;  
-      flex-flow: row wrap;
-      font-weight: bold;
-      text-align: center;
-      margin: auto;
-      font-family: Cinzel;
-      border: solid black;
-  }
+    display:flex;  
+    flex-flow: column wrap;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    font-family: Cinzel;
+    border: solid black;
+    max-width: 20%;
+    max-height: 20%;
+}
     
     .container > * {
       padding: 10px;
@@ -250,15 +280,17 @@ body {
     }
   }
 @media (max-width: 780px) {
-  .container {
-      display: flex;  
-      flex-flow: row wrap;
-      font-weight: bold;
-      text-align: center;
-      margin: auto;
-      font-family: Cinzel;
-      border: solid black;
-  }
+.container {
+  display:flex;  
+  flex-flow: column wrap;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+  font-family: Cinzel;
+  border: solid black;
+  max-width: 20%;
+  max-height: 20%;
+}
     
     .container > * {
       padding: 10px;
@@ -266,16 +298,17 @@ body {
     }
   }
 @media (max-width: 480px) {
-  .container {
-      display: flex;  
-      flex-flow: row wrap;
-      font-weight: bold;
-      text-align: center;
-      margin: auto;
-      font-family: Cinzel;
-      border: solid black;
-      
-  }
+.container {
+  display:flex;  
+  flex-flow: column wrap;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+  font-family: Cinzel;
+  border: solid black;
+  max-width: 20%;
+  max-height: 20%;
+}
     
     .container > * {
       padding: 10px;
