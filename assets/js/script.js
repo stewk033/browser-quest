@@ -5,6 +5,7 @@ const img1 = document.getElementById('source1');
 const avatarName = document.querySelector('#avatar-name');
 const savedName = document.querySelector('#saved-name');
 const nameList = document.querySelector('#name-list');
+const heroDis = document.querySelector('#hero');
 
 window.onload = function() {
     
@@ -59,14 +60,19 @@ let gameManager = {
         switch (classType){
             case "Minotaur":
                 player = new Player(classType, 200, 0, 200, 100, 50);
+
            break;
            case "Satyr":
             player = new Player(classType, 80, 0, 50, 200, 50);
+
        break;
        case "Quillboar":
         player = new Player(classType, 100, 0, 200, 150, 200);
+
         break;
-        }
+        
+    }
+  
         // changes hero div to the selected character
         let getHeroName = document.querySelector(".player-name");
         getHeroName.innerHTML = localStorage.getItem ("character");
@@ -83,14 +89,14 @@ let gameManager = {
         getHeroAgility.innerHTML = player.agility;
         let getHeroSpeed = document.querySelector(".playerspeed");
         getHeroSpeed.innerHTML = player.speed;
+        
+        heroDis.style = "display:none;"
     },
 
     // changes Index to create the arena
     setPreFight: function() {
-          
             let getactions = document.querySelector(".Blazing");
             let getarena = document.querySelector(".arena");
-          
             getactions.innerHTML = '<a href="#" class="btn-prefight" onclick="gameManager.setFight()">Search for enemy!</a>';
             getarena.style.visibility = "visible";
     },
