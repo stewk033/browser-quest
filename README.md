@@ -14,10 +14,10 @@ In this assignment we are creating a simple browser based role-playing game that
 * _WHEN I click the start button_
 * _THEN I am able to enter my name and start the game_
 * _WHEN encountering an enemy_
-* _THEN I am given a choice to attack, defend, or run from battle_
+* _THEN I am given a option to attack_
 * _WHEN I attack_
 * _THEN I continue to engage the enemy until defeat_
-* _WHEN I run from a battle_
+_when the enemy is deafeated_
 * _THEN my journey continues until I reach the next enemy, repeating the process_
 * _WHEN I lose a battle_
 * _THEN the game is over_
@@ -30,9 +30,18 @@ In this assignment we are creating a simple browser based role-playing game that
 
 ## Solution
 
-Live URL:
+Live URL: https://stewk033.github.io/browser-quest/#
 
 Refactored Code:
 * [HTML] 
 * [CSS] 
 * [JS] 
+
+## Credits
+- blazing fire text: https://codepen.io/makan/pen/yyjRZx
+- background image: http://desktop.fansshare.com/gallery/photos/16027274/lovers-dream-world-normal/?displaying
+- player and enemy images: https://heroines-fantasy.fandom.com/wiki/Special:NewFiles
+- google font api: https://fonts.googleapis.com/css?family=Cinzel
+- midi: //www.midijs.net/lib/midi.js'
+
+

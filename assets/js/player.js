@@ -1,8 +1,7 @@
-
- //puts player into the global scope
+//puts player into the global scope
 let player;
 //sets player stats
-   function Player(classType, health, mana, strength, agility, speed){
+function Player(classType, health, mana, strength, agility, speed){
    this.classType = classType;
    this.health = health;
    this.mana = mana;
