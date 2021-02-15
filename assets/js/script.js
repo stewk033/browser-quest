@@ -1,20 +1,30 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
 >>>>>>> 38bc06677ea1a7062a7b72309419fae98af14812
+=======
+
+
+>>>>>>> 349029966155aa7683ffab450fe65c07009cf666
 const canvas = document.getElementById('canvas');
 const context = canvas.getContext('2d');
 const img = document.getElementById('source');
 const img1 = document.getElementById('source1');
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+// loads Canvas API
+>>>>>>> 349029966155aa7683ffab450fe65c07009cf666
 window.onload = function() {
-    // set canvas to max width/height
+    
     context.canvas.width = window.innerWidth
     context.canvas.height = window.innerHeight
-    // add image to canvas
+    
     context.drawImage(img, 0, 0, window.innerWidth, window.innerHeight)
+<<<<<<< HEAD
     // context.clearRect(100, 100, 50, 50)
 
     // let flag = false
@@ -40,11 +50,14 @@ window.onload = function() {
     
     context.drawImage(img, 0, 0, window.innerWidth, window.innerHeight)
 >>>>>>> 38bc06677ea1a7062a7b72309419fae98af14812
+=======
+>>>>>>> 349029966155aa7683ffab450fe65c07009cf666
     // add title to canvas
     context.font = "60px Luminari";
     context.fillStyle = "white";
     context.fillText("Browser Quest", 10, 50);
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 window.onresize = function() {
@@ -54,6 +67,11 @@ window.onresize = function() {
 window.onresize = function() {
    
 >>>>>>> 38bc06677ea1a7062a7b72309419fae98af14812
+=======
+ // set canvas to adjust with screen size
+window.onresize = function() {
+   
+>>>>>>> 349029966155aa7683ffab450fe65c07009cf666
     context.canvas.width = window.innerWidth
     context.canvas.height = window.innerHeight
     context.drawImage(img, 0, 0, window.innerWidth, window.innerHeight)
@@ -62,9 +80,13 @@ window.onresize = function() {
     context.fillText("Browser Quest", 10, 50)
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 // when a character is chosen the game manager function  sets the hero 
 >>>>>>> 38bc06677ea1a7062a7b72309419fae98af14812
+=======
+// when a character is chosen the game manager function  sets the hero 
+>>>>>>> 349029966155aa7683ffab450fe65c07009cf666
 let gameManager = {
     
     setGameStart: function(classType){
@@ -72,9 +94,13 @@ let gameManager = {
         this.setPreFight();
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     // when character is chosen the reset player function 
 >>>>>>> 38bc06677ea1a7062a7b72309419fae98af14812
+=======
+    // when character is chosen the reset player function 
+>>>>>>> 349029966155aa7683ffab450fe65c07009cf666
     resetPlayer: function(classType){
         switch (classType){
             case "Minotaur":
@@ -88,19 +114,41 @@ let gameManager = {
         break;
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         let gethero = document.querySelector(".hero");
         gethero.innerHTML = '<img src="./assets/images/'+
         classType.toLowerCase() + '.jpg" class="image-avatar"><div><h3>'+classType + '</h3><p class="health-player">Health:'+player.health+' </p><p>Mana:'+player.mana+' </p><p>Strength:'+player.strength+' </p><p>Agility:'+player.agility+'  </p><p>Speed:'+player.speed+'  </p></div>';
+=======
+        // changes hero div to the selected character
+        // player name
+        let getHeroImg = document.querySelector(".player-image");
+        getHeroImg.innerHTML = '<img src="./assets/images/'+
+        classType.toLowerCase() + '.jpg" class="image-avatar">';
+        let getHeroHealth = document.querySelector(".playerhealth");
+        getHeroHealth.innerHTML = player.health;
+        let getHeroMana = document.querySelector(".playermana");
+        getHeroMana.innerHTML = player.mana;
+        let getHeroStrength = document.querySelector(".playerstrength");
+        getHeroStrength.innerHTML = player.strength;
+        let getHeroAgility = document.querySelector(".playeragility");
+        getHeroAgility.innerHTML = player.agility;
+        let getHeroSpeed = document.querySelector(".playerspeed");
+        getHeroSpeed.innerHTML = player.speed;
+>>>>>>> 349029966155aa7683ffab450fe65c07009cf666
     },
+
+    // changes Index to create the arena
     setPreFight: function() {
-            let getheader = document.querySelector(".header");
-            let getactions = document.querySelector(".actions");
+          
+            let getactions = document.querySelector(".Blazing");
             let getarena = document.querySelector(".arena");
-            getheader.innerHTML = '<p>Task: Find an enemy!</p>';
+          
             getactions.innerHTML = '<a href="#" class="btn-prefight" onclick="gameManager.setFight()">Search for enemy!</a>';
             getarena.style.visibility = "visible";
     },
+    //changes the Index again to add a random enemy 
    setFight: function() {
+<<<<<<< HEAD
     let getheader = document.querySelector(".header");
     let getactions = document.querySelector(".actions");
     let getenemy = document.querySelector(".enemy");
@@ -136,13 +184,18 @@ let gameManager = {
     },
     //changes the Index again to add a random enemy 
    setFight: function() {
+=======
+>>>>>>> 349029966155aa7683ffab450fe65c07009cf666
   
     let getactions = document.querySelector(".Blazing");
     
     //creates enemy
     let enemy00 = new Enemy("Peasant" ,100 ,0 , 50 ,100 ,60, 100);
     let enemy01 = new Enemy("Knight" ,120 ,0 , 50 ,100 ,80 ,100);
+<<<<<<< HEAD
 >>>>>>> 38bc06677ea1a7062a7b72309419fae98af14812
+=======
+>>>>>>> 349029966155aa7683ffab450fe65c07009cf666
     let chooseRandomEnemy = Math.floor(Math.random() * Math.floor(2));
     switch (chooseRandomEnemy){
         case 0:
@@ -153,6 +206,7 @@ let gameManager = {
                 break;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     getheader.innerHTML = '<p>Task: Choose your move</p>';
     getactions.innerHTML = '<a href="#" class="btn-prefight" onclick="playerMoves.calAttack()">Attack!</a>';
     getenemy.innerHTML = '<img src="./assets/images/'+
@@ -161,6 +215,10 @@ let gameManager = {
 =======
  
     getactions.innerHTML = '<a href="#" class="btn-prefight" onclick="playerMoves.calAttack()">Attack!</a>';
+=======
+ 
+    getactions.innerHTML = '<a href="#" class="btn-prefight" onclick="playerMoves.calAttack()">Attack!</a>';
+>>>>>>> 349029966155aa7683ffab450fe65c07009cf666
     
     
     let getEnemyName = document.querySelector(".enemy-name");
@@ -185,6 +243,9 @@ let gameManager = {
         let getEnemySpeed = document.querySelector(".enemyspeed");
          getEnemySpeed.innerHTML = enemy.speed;
 }
+<<<<<<< HEAD
 >>>>>>> 38bc06677ea1a7062a7b72309419fae98af14812
+=======
+>>>>>>> 349029966155aa7683ffab450fe65c07009cf666
 }
 
