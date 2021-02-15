@@ -1,3 +1,6 @@
+const modalDis = document.querySelector('#modal-bg');
+const winDis = document.querySelector('#win');
+const lossDis = document.querySelector('#loss');
 //puts player into the global scope
 let player;
 //sets player stats
@@ -51,11 +54,12 @@ let playerMoves ={
       enemy.health = enemy.health - totalDamage;
 
       if (enemy.health <=0){
-         alert("youwin");
+       
          getPlayerHealth.innerHTML =  player.health;
          getEnemyHealth.innerHTML = '0';
-       //  document.getElementsByClassName("modal-bg").classList.add('.bg-active');
-       ModalDisplay()
+      
+       modalDis.style = "visibility: visible; opacity: 1;"
+       winDis.style = "visibility: visible; opacity: 1;"
       } else{
          getEnemyHealth.innerHTML =  enemy.health;
          let enemyAttackValues = enemyAttack();
@@ -63,11 +67,12 @@ let playerMoves ={
       player.health = player.health - totalDamage;
   
       if (player.health <=0){
-         alert("youlose");
+       
          getPlayerHealth.innerHTML = '0';
          getEnemyHealth.innerHTML =  enemy.health;
-       //  document.getElementsByClassName("modal-bg").classList.add('.bg-active');
-       ModalDisplay()
+     
+       modalDis.style = "visibility: visible; opacity: 1;"
+      lossDis.style = "visibility: visible; opacity: 1;"
       }else{
          getPlayerHealth.innerHTML = player.health;
       }
@@ -79,11 +84,12 @@ let playerMoves ={
       player.health = player.health - totalDamage;
 
       if (player.health <=0){
-         alert("youlose");
+         
          getEnemyHealth.innerHTML = enemy.health;
          getPlayerHealth.innerHTML = '';
-        // document.getElementsByClassName("modal-bg").classList.add('.bg-active');
-        ModalDisplay()
+        
+        modalDis.style = "visibility: visible; opacity: 1;"
+        lossDis.style = "visibility: visible; opacity: 1;"
       } else{
          getPlayerHealth.innerHTML = player.health;
          let playerAttackValues = playerAttack();
@@ -92,11 +98,12 @@ let playerMoves ={
    
     
       if (enemy.health <=0){
-         alert("youwin");
+        
          getEnemyHealth.innerHTML = '0';
          getPlayerHealth.innerHTML =  player.health;
-        // document.getElementsByClassName("modal-bg").classList.add('.bg-active');
-        ModalDisplay()
+        
+        modalDis.style = "visibility: visible; opacity: 1;"
+        winDis.style = "visibility: visible; opacity: 1;"
       }else{
          getEnemyHealth.innerHTML =  enemy.health;
       }

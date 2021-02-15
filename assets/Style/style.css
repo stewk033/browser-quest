@@ -47,6 +47,20 @@ img {
   align-items: center;
   flex-direction: column;
 }
+.win {
+  font-size: xx-large;
+  color:black;
+  font-family:Cinzel;
+font-weight: bold;
+visibility: hidden;
+}
+.loss {
+  font-size:xx-large;
+  color:black;
+  font-family:Cinzel;
+  font-weight: bold;
+  visibility: hidden;
+}
 label,
 input {
   font-size: xx-large;
