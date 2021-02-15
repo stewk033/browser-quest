@@ -1,9 +1,4 @@
-//modal varible
-var modalBg = document.querySelector('modal-bg');
-   //modal display function
-   function modalDisplay (){
-      modalBg.classList.add('bg-active');
-      }
+
  //puts player into the global scope
 let player;
 //sets player stats
@@ -60,7 +55,8 @@ let playerMoves ={
          alert("youwin");
          getPlayerHealth.innerHTML =  player.health;
          getEnemyHealth.innerHTML = '0';
-         modalDisplay();
+       //  document.getElementsByClassName("modal-bg").classList.add('.bg-active');
+       ModalDisplay()
       } else{
          getEnemyHealth.innerHTML =  enemy.health;
          let enemyAttackValues = enemyAttack();
@@ -71,7 +67,8 @@ let playerMoves ={
          alert("youlose");
          getPlayerHealth.innerHTML = '0';
          getEnemyHealth.innerHTML =  enemy.health;
-         modalDisplay();
+       //  document.getElementsByClassName("modal-bg").classList.add('.bg-active');
+       ModalDisplay()
       }else{
          getPlayerHealth.innerHTML = player.health;
       }
@@ -86,7 +83,8 @@ let playerMoves ={
          alert("youlose");
          getEnemyHealth.innerHTML = enemy.health;
          getPlayerHealth.innerHTML = '';
-         modalDisplay();
+        // document.getElementsByClassName("modal-bg").classList.add('.bg-active');
+        ModalDisplay()
       } else{
          getPlayerHealth.innerHTML = player.health;
          let playerAttackValues = playerAttack();
@@ -98,7 +96,8 @@ let playerMoves ={
          alert("youwin");
          getEnemyHealth.innerHTML = '0';
          getPlayerHealth.innerHTML =  player.health;
-         modalDisplay();
+        // document.getElementsByClassName("modal-bg").classList.add('.bg-active');
+        ModalDisplay()
       }else{
          getEnemyHealth.innerHTML =  enemy.health;
       }
