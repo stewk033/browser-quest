@@ -1,5 +1,6 @@
 body {
     background-color: rgb(28, 29, 31);
+    text-emphasis-color: ;
 }
 canvas{
     position:absolute;
@@ -11,15 +12,31 @@ img {
     width: 160px;
 }
 .container {
-    display: flex;  
-    flex-flow: row wrap;
+    display:flex;  
+    flex-flow: column wrap;
     font-weight: bold;
     text-align: center;
     margin: auto;
     font-family: Cinzel;
     border: solid black;
-    max-width: 50%;
+    max-width: 20%;
     max-height: 20%;
+}
+
+.aside {
+  max-width: 100%;
+}
+
+.footer {
+  max-width: 100%;
+}
+
+.header {
+  max-width: 100%;
+}
+
+.player-name {
+  max-width: 100%;
 }
   
   .container > * {
@@ -28,7 +45,7 @@ img {
   }
   
 .versus {
-    margin: 30px 48%;
+    margin: 30px 48.5%;
 }
 
 .versus-text {
@@ -51,12 +68,16 @@ img {
     text-align: left;
     background: rgb(70, 67, 67);
     border: double rgb(56, 74, 245);
+    max-width:100%;
+    max-height:200px;
   }
   
   .enemy-image {
     text-align: left;
     background: rgb(70, 67, 67);
     border: double rgb(117, 7, 7);
+    max-width:100%px;
+    max-height:200px;
   }
 
   .health {
