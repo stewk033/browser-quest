@@ -42,32 +42,37 @@ let playerMoves ={
          let attackValues = [calOutputDamage,numberOfHits];
          return attackValues;
    }
-   //
-   let getPlayerHealth = document.querySelector(".health-player");
-   let getEnemyHealth = document.querySelector(".health-enemy");
+  //
+   let getPlayerHealth = document.querySelector(".playerhealth");
+   let getEnemyHealth = document.querySelector(".enemyhealth");
    if (getPlayerSpeed >= getEnemySpeed) {
       let playerAttackValues = playerAttack();
       let totalDamage = playerAttackValues[0] * playerAttackValues[1];
       enemy.health = enemy.health - totalDamage;
       // must remove alert
-      alert("You hit" + playerAttackValues[0]+ " damage"+ playerAttackValues[1]+" times");
+     
+    //  alert("You hit" + playerAttackValues[0]+ " damage"+ playerAttackValues[1]+" times");
       if (enemy.health <=0){
-         alert("youwin");
-         getPlayerHealth.innerHTML = 'Health: ' + player.health;
-         getEnemyHealth.innerHTML = 'Health:0';
+      //   alert("you win");
+         
+         getPlayerHealth.innerHTML = player.health;
+         getEnemyHealth.innerHTML = '0';
       } else{
-         getEnemyHealth.innerHTML = 'Health: ' + enemy.health;
+         getEnemyHealth.innerHTML = enemy.health;
          let enemyAttackValues = enemyAttack();
          let totalDamage = enemyAttackValues[0] * enemyAttackValues[1];
       player.health = player.health - totalDamage;
       // must remove alert
-      alert("You hit" + enemyAttackValues[0]+ " damage"+ enemyAttackValues[1]+" times");
+     
+     // alert("You hit" + enemyAttackValues[0]+ " damage"+ enemyAttackValues[1]+" times");
       if (player.health <=0){
-         alert("youlose");
-         getPlayerHealth.innerHTML = 'Health:0';
-         getEnemyHealth.innerHTML = 'Health: ' + enemy.health;
+      //   alert("you lose");
+        
+        
+         getPlayerHealth.innerHTML = '0';
+         getEnemyHealth.innerHTML =  enemy.health;
       }else{
-         getPlayerHealth.innerHTML = 'Health: ' + player.health;
+         getPlayerHealth.innerHTML =  player.health;
       }
       }
    }
@@ -75,25 +80,34 @@ let playerMoves ={
       let enemyAttackValues = enemyAttack();
       let totalDamage = enemyAttackValues[0] * enemyAttackValues[1];
       player.health = player.health - totalDamage;
+    
       // must remove alert
-      alert("You hit" + enemyAttackValues[0]+ " damage"+ enemyAttackValues[1]+" times");
+     // alert("You hit" + enemyAttackValues[0]+ " damage"+ enemyAttackValues[1]+" times");
       if (player.health <=0){
-         alert("youwin");
-         getEnemyHealth.innerHTML = 'Health: ' + enemy.health;
-         getPlayerHealth.innerHTML = 'Health:0';
+         let youLose = document.getElementById('loss');
+         youLose.style.visibility("visible");
+        // alert("you win");
+        // alert("you lose");
+    
+         getEnemyHealth.innerHTML =  enemy.health;
+         getPlayerHealth.innerHTML = '0';
       } else{
-         getPlayerHealth.innerHTML = 'Health: ' + Player.health;
+         getPlayerHealth.innerHTML = Player.health;
          let playerAttackValues = playerAttack();
          let totalDamage = playerAttackValues[0] * playerAttackValues[1];
       enemy.health = enemy.health - totalDamage;
+    
       // must remove alert
-      alert("You hit" + playerAttackValues[0]+ " damage"+ playerAttackValues[1]+" times");
+     // alert("You hit" + playerAttackValues[0]+ " damage"+ playerAttackValues[1]+" times");
       if (enemy.health <=0){
-         alert("youlose");
-         getEnemyHealth.innerHTML = 'Health:0';
-         getPlayerHealth.innerHTML = 'Health: ' + player.health;
+         let youWin = document.getElementById('win');
+         youWin.style.visibility("visible");
+        // alert("you win");
+       
+         getEnemyHealth.innerHTML = '0';
+         getPlayerHealth.innerHTML =  player.health;
       }else{
-         getEnemyHealth.innerHTML = 'Health: ' + enemy.health;
+         getEnemyHealth.innerHTML =  enemy.health;
       }
       }
    }

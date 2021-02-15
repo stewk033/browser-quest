@@ -1,10 +1,10 @@
 
-
+// loads Canvas API
 const canvas = document.getElementById('canvas');
 const context = canvas.getContext('2d');
 const img = document.getElementById('source');
 const img1 = document.getElementById('source1');
-// loads Canvas API
+
 window.onload = function() {
     
     context.canvas.width = window.innerWidth
@@ -26,6 +26,12 @@ window.onresize = function() {
     context.fillStyle = "white";
     context.fillText("Browser Quest", 10, 50)
 }
+// modal for name and game status 
+var modalBtn = document.querySelector('.modal-btn');
+  //  modalBtn.addEventListener('click',function(){
+   // modalBg.classList.add('bg-active');
+//});
+
 // when a character is chosen the game manager function  sets the hero 
 let gameManager = {
     

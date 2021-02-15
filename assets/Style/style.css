@@ -10,6 +10,40 @@ canvas{
 img {
     width: 160px;
 }
+.modal-bg{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left:0;
+  background-color: black;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+}
+.bg-active{
+  visibility: visible;
+  opacity: 1;
+}
+.modal{
+  background-color: aliceblue;
+  width: 30%;
+  height: 25%;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.modal button{
+  padding: 10px 30px;
+  background-color: blue;
+  color: white;
+  border:none;
+  font-family:Cinzel;
+  cursor: pointer;
+}
 .container {
     display: flex;  
     flex-flow: row wrap;
@@ -33,6 +67,17 @@ img {
 
 .versus-text {
     font-family: Cinzel;
+}
+
+.win{
+  color: black;
+  visibility: hidden;
+  font-family: Cinzel
+}
+.loss{
+  color: black;
+  visibility: hidden;
+  font-family: Cinzel
 }
 
   .player-name {
@@ -114,7 +159,6 @@ img {
 	overflow: hidden;
     text-align: center;
 	vertical-align: middle;
-
 }
 .fire:before {
 	content: '';
