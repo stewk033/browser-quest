@@ -27,15 +27,21 @@ canvas{
   justify-content: center;
   align-items: center;
 }
+
 img {
   width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-.hero{
+
+.hero {
   display:flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+
 .modal-bg{
   position: fixed;
   width: 100%;
@@ -48,12 +54,13 @@ img {
   align-items: center;
   visibility: hidden;
   opacity: 0;
-  
 }
+
 .bg-active{
   visibility: visible;
   opacity: 1;
 }
+
 .modal{
   background-color: aliceblue;
   width: 25%;
@@ -64,6 +71,7 @@ img {
   align-items: center;
   flex-direction: column;
 }
+
 .win {
   font-size: xx-large;
   color:black;
@@ -71,6 +79,7 @@ img {
 font-weight: bold;
 visibility: hidden;
 }
+
 .loss {
   font-size:xx-large;
   color:black;
@@ -78,8 +87,8 @@ visibility: hidden;
   font-weight: bold;
   visibility: hidden;
 }
-label,
-input {
+
+label, input {
   font-size: xx-large;
   position: relative;
   margin: 0px 0px 0px 30px;
@@ -95,19 +104,19 @@ button {
   position: relative;
   margin: 20px 0px 0px 30px;
 }
-form,
-h1,
-h2,
-h3,
-p {
+
+form, h1, h2, h3, p {
+  text-align: center;
   color: white;
   font-family: Cinzel;
   text-shadow: 2px 2px 2px black;
 }
+
 .section{
   visibility: hidden;
   opacity: 0;
 }
+
 .container {
   display:flex;  
   flex-flow: column wrap;
@@ -118,7 +127,6 @@ p {
   border: solid black;
   max-width: 20%;
   max-height: 20%;
-  
 }
 
 .aside {
@@ -270,7 +278,9 @@ animation: 1s Blazing infinite alternate linear;
 }
 
 .hero img {
-
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 160px;
 }
 
