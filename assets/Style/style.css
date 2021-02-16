@@ -16,8 +16,18 @@ canvas{
   top:0;
   z-index:-1;
 }
+#avatar-name{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
 img {
   width: 160px;
+}
+.hero{
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 .modal-bg{
   position: fixed;
@@ -87,7 +97,10 @@ p {
   font-family: Cinzel;
   text-shadow: 2px 2px 2px black;
 }
-
+.section{
+  visibility: hidden;
+  opacity: 0;
+}
 .container {
   display:flex;  
   flex-flow: column wrap;
@@ -98,6 +111,7 @@ p {
   border: solid black;
   max-width: 20%;
   max-height: 20%;
+  
 }
 
 .aside {

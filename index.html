@@ -9,16 +9,26 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel">
     <link rel="stylesheet" href="./Assets/style/style.css">
  
-    <title>Browser Quest</title>
+
 </head>
 <body>
+    
     <canvas id="canvas"></canvas>
     <div style="display:none;">
     <img id="source"
         src="./assets/images/fantasy-world-background-1.jpg" >
     </div>
-   
 
+    
+    <form id="avatar-name">
+        <label for="playerName">Please Name Your Hero:</label><br>
+        <input type="text" id="saved-name" name="saved-name"><button type="submit">Save</button><br>
+        <button id="random">Random Name</button>
+    </form>
+    <ol id="name-list"></ol>
+
+   
+   
     <div id="hero" class="hero">
         <a href="#"onclick="gameManager.setGameStart('Minotaur')">
             <img src="./Assets/images/minotaur.jpg"alt="minotaur">
@@ -45,17 +55,9 @@
     
 
 
-
-    <form id="avatar-name">
-        <label for="playerName">Please Name Your Hero:</label><br>
-        <input type="text" id="saved-name" name="saved-name"><button type="submit">Save</button><br>
-        <button id="random">Random Name</button>
-    </form>
-    <ol id="name-list"></ol>
     
-<div class="enemy">
+    
 
-</div>
 <div id="modal-bg" class="modal-bg">
     <div class="modal">
       <div id= "win" class="win">
@@ -67,8 +69,8 @@
   </div>
   </div>
    
-    <div class="section">
-    <div class="container">
+    <div id='section'class="section">
+    <div  class="container">
         <name class="player-name">Name</name>
         <article class="player-image">
         </article>
@@ -104,7 +106,7 @@
 </div>
 
     
-   <div class="arena"></div>
+  
 
       <div class="container">
         <name class="enemy-name">name</name>

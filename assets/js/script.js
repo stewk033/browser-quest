@@ -6,7 +6,7 @@ const avatarName = document.querySelector('#avatar-name');
 const savedName = document.querySelector('#saved-name');
 const nameList = document.querySelector('#name-list');
 const heroDis = document.querySelector('#hero');
-
+const sectionDis = document.querySelector('#section');
 window.onload = function() {
     
     context.canvas.width = window.innerWidth
@@ -91,14 +91,15 @@ let gameManager = {
         getHeroSpeed.innerHTML = player.speed;
         
         heroDis.style = "display:none;"
+        sectionDis.style = "visibility: visible;opacity: 1;"
     },
 
     // changes Index to create the arena
     setPreFight: function() {
             let getactions = document.querySelector(".Blazing");
-            let getarena = document.querySelector(".arena");
+           
             getactions.innerHTML = '<a href="#" class="btn-prefight" onclick="gameManager.setFight()">Search for enemy!</a>';
-            getarena.style.visibility = "visible";
+           
     },
     //changes the Index again to add a random enemy 
    setFight: function() {
