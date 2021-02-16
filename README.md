@@ -32,10 +32,12 @@ _when the enemy is deafeated_
 
 Live URL: https://stewk033.github.io/browser-quest/#
 
-Refactored Code:
-* [HTML] 
-* [CSS] 
-* [JS] 
+![SCREENSHOT]
+
+Our Code:
+* [HTML] https://github.com/stewk033/browser-quest/blob/main/index.html
+* [CSS]  https://github.com/stewk033/browser-quest/blob/main/assets/Style/style.css
+* [JS]   https://github.com/stewk033/browser-quest/blob/main/assets/js/script.js
 
 ## Credits
 - blazing fire text: https://codepen.io/makan/pen/yyjRZx

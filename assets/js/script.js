@@ -6,28 +6,32 @@ const avatarName = document.querySelector('#avatar-name');
 const savedName = document.querySelector('#saved-name');
 const nameList = document.querySelector('#name-list');
 const heroDis = document.querySelector('#hero');
+const enemyContainer = document.getElementById('enemy-container');
+const playerContainer = document.getElementById('player-container');
 
 window.onload = function() {
+    // document.body.style.backgroundImage = "url('../images/fantasy-world-background-1.jpg')"
     
-    context.canvas.width = window.innerWidth
-    context.canvas.height = window.innerHeight
+    // context.canvas.width = window.innerWidth
+    // context.canvas.height = window.innerHeight
     
-    context.drawImage(img, 0, 0, window.innerWidth, window.innerHeight)
+    // context.drawImage(img, 0, 0, window.innerWidth, window.innerHeight)
     // add title to canvas
-    context.font = "60px Luminari";
+    context.font = "40px Luminari";
     context.fillStyle = "white";
     context.fillText("Browser Quest", 10, 50);
 }
  // set canvas to adjust with screen size
 window.onresize = function() {
    
-    context.canvas.width = window.innerWidth
-    context.canvas.height = window.innerHeight
-    context.drawImage(img, 0, 0, window.innerWidth, window.innerHeight)
-    context.font = "60px Luminari";
+    // context.canvas.width = window.innerWidth
+    // context.canvas.height = window.innerHeight
+    // context.drawImage(img, 0, 0, window.innerWidth, window.innerHeight)
+    context.font = "40px Luminari";
     context.fillStyle = "white";
     context.fillText("Browser Quest", 10, 50)
 }
+
 avatarName.addEventListener('submit', function (event) {
     event.preventDefault();
 
@@ -99,6 +103,9 @@ let gameManager = {
             let getarena = document.querySelector(".arena");
             getactions.innerHTML = '<a href="#" class="btn-prefight" onclick="gameManager.setFight()">Search for enemy!</a>';
             getarena.style.visibility = "visible";
+            avatarName.style.display = "none";
+            enemyContainer.style.display = "flex";
+            playerContainer.style.display = "flex";
     },
     //changes the Index again to add a random enemy 
    setFight: function() {
