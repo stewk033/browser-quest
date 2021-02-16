@@ -1,6 +1,7 @@
 body {
   text-decoration: white;
-  background: url('../images/fantasy-world-background-1.jpg') no-repeat center center fixed;
+  background: url("../images/fantasy-world-background-1.jpg") no-repeat center
+    center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -8,22 +9,18 @@ body {
 }
 
 a {
-color:ivory;
+  color: ivory;
 }
 
-canvas{
+canvas {
   position: absolute;
-  left:0;
-  top:0;
-  z-index:-1;
+  left: 0;
+  top: 0;
+  z-index: -1;
 }
-
-/* #player-container, #enemy-container {
-  display: none
-} */
 
 #avatar-name {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -36,18 +33,18 @@ img {
 }
 
 .hero {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.modal-bg{
+.modal-bg {
   position: fixed;
   width: 100%;
   height: 100vh;
   top: 0;
-  left:0;
+  left: 0;
   background-color: black;
   display: flex;
   justify-content: center;
@@ -56,17 +53,17 @@ img {
   opacity: 0;
 }
 
-.bg-active{
+.bg-active {
   visibility: visible;
   opacity: 1;
 }
 
-.modal{
+.modal {
   background-color: aliceblue;
   width: 25%;
   height: 15%;
-  font-family:Cinzel;
-  display:flex;
+  font-family: Cinzel;
+  display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
@@ -74,21 +71,22 @@ img {
 
 .win {
   font-size: xx-large;
-  color:black;
-  font-family:Cinzel;
-font-weight: bold;
-visibility: hidden;
-}
-
-.loss {
-  font-size:xx-large;
-  color:black;
-  font-family:Cinzel;
+  color: black;
+  font-family: Cinzel;
   font-weight: bold;
   visibility: hidden;
 }
 
-label, input {
+.loss {
+  font-size: xx-large;
+  color: black;
+  font-family: Cinzel;
+  font-weight: bold;
+  visibility: hidden;
+}
+
+label,
+input {
   font-size: xx-large;
   position: relative;
   margin: 0px 0px 0px 30px;
@@ -105,20 +103,24 @@ button {
   margin: 20px 0px 0px 30px;
 }
 
-form, h1, h2, h3, p {
+form,
+h1,
+h2,
+h3,
+p {
   text-align: center;
   color: white;
   font-family: Cinzel;
   text-shadow: 2px 2px 2px black;
 }
 
-.section{
+.section {
   visibility: hidden;
   opacity: 0;
 }
 
 .container {
-  display:flex;  
+  display: flex;
   flex-flow: column wrap;
   font-weight: bold;
   text-align: center;
@@ -130,19 +132,19 @@ form, h1, h2, h3, p {
 }
 
 .aside {
-max-width: 100%;
+  max-width: 100%;
 }
 
 .footer {
-max-width: 100%;
+  max-width: 100%;
 }
 
 .header {
-max-width: 100%;
+  max-width: 100%;
 }
 
 .player-name {
-max-width: 100%;
+  max-width: 100%;
 }
 
 .container > * {
@@ -169,19 +171,18 @@ max-width: 100%;
   border: double rgb(199, 198, 198);
 }
 
-
 .player-image {
   background: rgb(70, 67, 67);
   border: double rgb(56, 74, 245);
-  max-width:100%;
-  max-height:100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .enemy-image {
   background: rgb(70, 67, 67);
   border: double rgb(117, 7, 7);
-  max-width:100%;
-  max-height:100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .health {
@@ -198,7 +199,6 @@ max-width: 100%;
   background: rgb(70, 67, 67);
   border-bottom: double rgb(5, 25, 78);
   max-width: 100%;
-  
 }
 
 .strength {
@@ -209,7 +209,7 @@ max-width: 100%;
   max-width: 100%;
 }
 
-  .agility {
+.agility {
   background: rgb(70, 67, 67);
   text-align: left;
   border: double rgb(199, 198, 198);
@@ -220,61 +220,49 @@ max-width: 100%;
 .speed {
   background: rgb(70, 67, 67);
   text-align: left;
-  border: double  rgb(199, 198, 198);
+  border: double rgb(199, 198, 198);
   border-bottom: double rgb(9, 255, 1);
   max-width: 100%;
 }
 
-/* img {
- height: 100%;
-  width: 100%;
-  border: double rgb(199, 198, 198);
-} */
-
 .fire {
-margin: 50px auto;
-width: 80%;
-max-width: 1000px;
-height: 200px;
+  margin: 50px auto;
+  width: 80%;
+  max-width: 1000px;
+  height: 200px;
 
-background-position: center center;
-background-size: 1000px 200px;
-border-radius: 10px;
-font-family: Cinzel;
-overflow: hidden;
+  background-position: center center;
+  background-size: 1000px 200px;
+  border-radius: 10px;
+  font-family: Cinzel;
+  overflow: hidden;
   text-align: center;
-vertical-align: middle;
-
+  vertical-align: middle;
 }
 .fire:before {
-content: '';
-display: inline-block;
-height: 100%;
-vertical-align: middle;
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
 }
 
 .Blazing {
-display: inline-block;
+  display: inline-block;
   margin: auto -150%;
-
 
   color: rgb(255, 115, 0);
   font-size: 60px;
-line-height: 50px;
-min-width: 50px;
-outline: none;
+  line-height: 50px;
+  min-width: 50px;
+  outline: none;
   vertical-align: middle;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  
-text-shadow:
-      0 3px 20px red,
-      0 0 20px red,
-  0 0 10px orange,
-  4px -5px 6px yellow,
-  -4px -10px 10px yellow,
-  0 -10px 30px yellow;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 
-animation: 1s Blazing infinite alternate linear;
+  text-shadow: 0 3px 20px red, 0 0 20px red, 0 0 10px orange,
+    4px -5px 6px yellow, -4px -10px 10px yellow, 0 -10px 30px yellow;
+
+  animation: 1s Blazing infinite alternate linear;
 }
 
 .hero img {
@@ -284,60 +272,62 @@ animation: 1s Blazing infinite alternate linear;
   width: 160px;
 }
 
-
 @keyframes Blazing {
-0%   { text-shadow: 0 3px 20px red, 0 0 20px red,
-  0 0 10px orange,
-  0 0 0 yellow,
-  0 0 5px yellow,
-  -2px -5px 5px yellow,
-  4px -10px 10px yellow; }
-25%   { text-shadow: 0 3px 20px red, 0 0 30px red,
-  0 0 20px orange,
-  0 0 5px yellow,
-  -2px -5px 5px yellow,
-  3px -10px 10px yellow,
-  -4px -15px 20px yellow; }
-50%   { text-shadow: 0 3px 20px red, 0 0 20px red,
-  0 -5px 10px orange,
-  -2px -5px 5px yellow,
-  3px -10px 10px yellow,
-  -4px -15px 20px yellow,
-  2px -20px 30px rgba(255,255,0,0.5); }
-75%   { text-shadow: 0 3px 20px red, 0 0 20px red,
-  0 -5px 10px orange,
-  3px -5px 5px yellow,
-  -4px -10px 10px yellow,
-  2px -20px 30px rgba(255,255,0,0.5),
-  0px -25px 40px rgba(255,255,0,0)}
-100%   { text-shadow: 0 3px 20px red, 0 0 20px red,
-  0 0 10px orange,
-  0 0 0 yellow,
-  0 0 5px yellow,
-  -2px -5px 5px yellow,
-  4px -10px 10px yellow; }
+  0% {
+    text-shadow: 0 3px 20px red, 0 0 20px red, 0 0 10px orange, 0 0 0 yellow,
+      0 0 5px yellow, -2px -5px 5px yellow, 4px -10px 10px yellow;
+  }
+  25% {
+    text-shadow: 0 3px 20px red, 0 0 30px red, 0 0 20px orange, 0 0 5px yellow,
+      -2px -5px 5px yellow, 3px -10px 10px yellow, -4px -15px 20px yellow;
+  }
+  50% {
+    text-shadow: 0 3px 20px red, 0 0 20px red, 0 -5px 10px orange,
+      -2px -5px 5px yellow, 3px -10px 10px yellow, -4px -15px 20px yellow,
+      2px -20px 30px rgba(255, 255, 0, 0.5);
+  }
+  75% {
+    text-shadow: 0 3px 20px red, 0 0 20px red, 0 -5px 10px orange,
+      3px -5px 5px yellow, -4px -10px 10px yellow,
+      2px -20px 30px rgba(255, 255, 0, 0.5), 0px -25px 40px rgba(255, 255, 0, 0);
+  }
+  100% {
+    text-shadow: 0 3px 20px red, 0 0 20px red, 0 0 10px orange, 0 0 0 yellow,
+      0 0 5px yellow, -2px -5px 5px yellow, 4px -10px 10px yellow;
+  }
 }
 
-
 @media all and (min-width: 600px) {
-  .aside { flex: 1 0 0; }
+  .aside {
+    flex: 1 0 0;
+  }
 }
 
 @media all and (min-width: 800px) {
-  .main    { flex: 3 0px; }
-  .aside-1 { order: 1; } 
-  .main    { order: 2; }
-  .aside-2 { order: 3; }
-  .footer  { order: 4; }
+  .main {
+    flex: 3 0px;
+  }
+  .aside-1 {
+    order: 1;
+  }
+  .main {
+    order: 2;
+  }
+  .aside-2 {
+    order: 3;
+  }
+  .footer {
+    order: 4;
+  }
 }
 
 body {
-  padding: 2em; 
+  padding: 2em;
 }
 
 @media (max-width: 1024px) {
   .container {
-    display:flex;  
+    display: flex;
     flex-flow: column wrap;
     font-weight: bold;
     text-align: center;
@@ -346,46 +336,46 @@ body {
     border: solid black;
     max-width: 20%;
     max-height: 20%;
-}
-    
-    .container > * {
-      padding: 10px;
-      flex: 1 100%;
-    }
   }
+
+  .container > * {
+    padding: 10px;
+    flex: 1 100%;
+  }
+}
 @media (max-width: 780px) {
-.container {
-  display:flex;  
-  flex-flow: column wrap;
-  font-weight: bold;
-  text-align: center;
-  margin: auto;
-  font-family: Cinzel;
-  border: solid black;
-  max-width: 20%;
-  max-height: 20%;
-}
-    
-    .container > * {
-      padding: 10px;
-      flex: 1 100%;
-    }
+  .container {
+    display: flex;
+    flex-flow: column wrap;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    font-family: Cinzel;
+    border: solid black;
+    max-width: 20%;
+    max-height: 20%;
   }
+
+  .container > * {
+    padding: 10px;
+    flex: 1 100%;
+  }
+}
 @media (max-width: 480px) {
-.container {
-  display:flex;  
-  flex-flow: column wrap;
-  font-weight: bold;
-  text-align: center;
-  margin: auto;
-  font-family: Cinzel;
-  border: solid black;
-  max-width: 20%;
-  max-height: 20%;
-}
-    
-    .container > * {
-      padding: 10px;
-      flex: 1 100%;
-    }
+  .container {
+    display: flex;
+    flex-flow: column wrap;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    font-family: Cinzel;
+    border: solid black;
+    max-width: 20%;
+    max-height: 20%;
   }
+
+  .container > * {
+    padding: 10px;
+    flex: 1 100%;
+  }
+}
