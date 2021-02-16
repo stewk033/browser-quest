@@ -32,7 +32,8 @@ _when the enemy is deafeated_
 
 Live URL: https://stewk033.github.io/browser-quest/#
 
-![SCREENSHOT]
+![SCREENSHOT](https://github.com/stewk033/browser-quest/blob/main/assets/images/bq1.JPG)
+![SCREENSHOT](https://github.com/stewk033/browser-quest/blob/main/assets/images/bq2.JPG)
 
 Our Code:
 * [HTML] https://github.com/stewk033/browser-quest/blob/main/index.html
