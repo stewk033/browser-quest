@@ -5,92 +5,82 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
     <!-- link to google font api-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel">
-    <link rel="stylesheet" href="./Assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
  
 
 </head>
 <body>
     
     <canvas id="canvas"></canvas>
-    <div style="display:none;">
-    <img id="source"
-        src="./assets/images/fantasy-world-background-1.jpg" >
-    </div>
-
-    
-    
-
-   
-   
-    <div id="hero" class="hero">
-        <h2>Please Select a Hero  </h2>
-        <a href="#"onclick="gameManager.setGameStart('Minotaur')">
-            <img src="./Assets/images/minotaur.jpg"alt="minotaur">
-            <div>
-               <h3>Minotaur</h3> 
-               <p>The mighty Minotaur may not be the quickest fighter but what they lack in speed they make up for in strength and constitution.</p>
-            </div>
-        </a>
-        <a href="#"onclick="gameManager.setGameStart('Satyr')">
-            <img src="./Assets/images/satyr.jpg"alt="satyr">
-            <div>
-               <h3>Satyr</h3> 
-               <p>The sneaky Satyr is a cunning hero who uses his mana to increase his fighting power since he is the weakest of the heros. </p>
-            </div>
-        </a>
-        <a href="#"onclick="gameManager.setGameStart('Quillboar')">
-            <img src="Assets/images/quillboar.jpg"alt="quillboar">
-            <div>
-               <h3>Quillboar</h3> 
-               <p>The Quarrelsome Quillboar is a fast ferocious fighter who is able to attack oppentents with blazing speed and agility. </p>
-            </div>
-        </a>
-    </div>
     <form id="avatar-name">
         <label for="playerName">Please Name Your Hero:</label><br>
         <input type="text" id="saved-name" name="saved-name"><button type="submit">Save</button><br>
         <button id="random">Random Name</button>
     </form>
     <ol id="name-list"></ol>
-
-
-    
-    
+   
+    <div id="hero" class="hero">
+        <h2>Please Select a Hero  </h2>
+        <a class="hero-character" href="#"onclick="gameManager.setGameStart('Minotaur')">
+            <img src="./assets/images/minotaur.jpg"alt="minotaur">
+            <div>
+               <h3>Minotaur</h3> 
+               <p>The mighty Minotaur may not be the quickest fighter but what they lack in speed they make up for in strength.</p>
+            </div>
+        </a>
+        <a class="hero-character" href="#"onclick="gameManager.setGameStart('Satyr')">
+            <img src="./assets/images/satyr.jpg"alt="satyr">
+            <div>
+               <h3>Satyr</h3> 
+               <p>The sneaky Satyr is a cunning hero who uses his mana to increase his fighting power since he is the weakest of the heroes.</p>
+            </div>
+        </a>
+        <a class="hero-character" href="#"onclick="gameManager.setGameStart('Quillboar')">
+            <img src="assets/images/quillboar.jpg"alt="quillboar">
+            <div>
+               <h3>Quillboar</h3> 
+               <p>The quarrelsome Quillboar is a ferocious fighter who is able to attack opponents with blazing speed.</p>
+            </div>
+        </a>
+    </div>
 
 <div id="modal-bg" class="modal-bg">
     <div class="modal">
       <div id= "win" class="win">
-        Game over you win please refresh to play again!
+        YOU WIN! Please refresh to play again!
       </div>
       <div id="loss" class="loss" >
-        Game over loss please refresh to play again!
+        GAME OVER! You lose! Please refresh to try again.
       </div> 
   </div>
   </div>
-   
-    <div id='section'class="section">
-    <div  class="container">
+   <!-- player section -->
+    <div id="section" class="section">
+    <div id="player-container" class="container">
         <name class="player-name">Name</name>
         <article class="player-image">
         </article>
-        <aside class="aside health">health:
+        <aside class="aside health">Health:
             <div class=playerhealth>
             </div>
         </aside>
-        <aside class="aside mana">mana
+        <aside class="aside mana">Mana:
             <div class=playermana>
             </div>
         </aside>
-        <aside class="aside strength">strength 
+        <aside class="aside strength">Strength:
             <div class=playerstrength>
         </div></aside>
-        <aside class="aside agility">agility
+        <aside class="aside agility">Agility:
             <div class=playeragility>
             </div>
         </aside>
-        <footer class="aside speed">speed
+        <footer class="aside speed">Speed:
             <div class=playerspeed>
             </div>
         </footer>
@@ -105,33 +95,30 @@
     </div>
   
 </div>
-
-    
-  
-
-      <div class="container">
-        <name class="enemy-name">name</name>
+<!-- enemy section -->
+      <div id="enemy-container" class="container">
+        <name class="enemy-name">Name</name>
         <article class="enemy-image">
             <div class=enemy-image>
             </div>
         </article>
-        <aside class="aside health">health
+        <aside class="aside health">Health:
             <div class=enemyhealth>
             </div>
         </aside>
-        <aside class="aside mana">mana
+        <aside class="aside mana">Mana:
             <div class=enemymana>
             </div>
         </aside>
-        <aside class="aside strength">strength
+        <aside class="aside strength">Strength:
             <div class=enemystrength>
             </div>
         </aside>
-        <aside class="aside agility">agility
+        <aside class="aside agility">Agility:
             <div class=enemyagility>
             </div>
         </aside>
-        <aside class="aside speed">speed
+        <aside class="aside speed">Speed:
             <div class=enemyspeed>
             </div>
         </aside>
@@ -139,9 +126,9 @@
       </div>
 
 
-      <script src="./Assets/JS/Script.js"></script>
-      <script src="./Assets/JS/player.js"></script>
-      <script src="./Assets/JS/enemy.js"></script>
+      <script src="./assets/js/script.js"></script>
+      <script src="./assets/js/player.js"></script>
+      <script src="./assets/js/enemy.js"></script>
 </body>
 </html>
 
