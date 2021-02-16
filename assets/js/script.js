@@ -9,6 +9,7 @@ const heroDis = document.querySelector('#hero');
 const enemyContainer = document.getElementById('enemy-container');
 const playerContainer = document.getElementById('player-container');
 
+const sectionDis = document.querySelector('#section');
 window.onload = function() {
     // document.body.style.backgroundImage = "url('../images/fantasy-world-background-1.jpg')"
     
@@ -60,18 +61,19 @@ let gameManager = {
         this.setPreFight();
     },
     // when character is chosen the reset player function 
+    //(classType, health, mana, strength, agility, speed)
     resetPlayer: function(classType){
         switch (classType){
             case "Minotaur":
-                player = new Player(classType, 200, 0, 200, 100, 50);
+                player = new Player(classType, 150, 0, 200, 100, 50);
 
            break;
            case "Satyr":
-            player = new Player(classType, 80, 0, 50, 200, 50);
+            player = new Player(classType, 100, 25, 75, 150, 100);
 
        break;
        case "Quillboar":
-        player = new Player(classType, 100, 0, 200, 150, 200);
+        player = new Player(classType, 125, 0, 150, 200, 150);
 
         break;
         
@@ -95,17 +97,19 @@ let gameManager = {
         getHeroSpeed.innerHTML = player.speed;
         
         heroDis.style = "display:none;"
+        sectionDis.style = "visibility: visible;opacity: 1;"
     },
 
     // changes Index to create the arena
     setPreFight: function() {
             let getactions = document.querySelector(".Blazing");
-            let getarena = document.querySelector(".arena");
+           
             getactions.innerHTML = '<a href="#" class="btn-prefight" onclick="gameManager.setFight()">Search for enemy!</a>';
             getarena.style.visibility = "visible";
             avatarName.style.display = "none";
             enemyContainer.style.display = "flex";
             playerContainer.style.display = "flex";
+           
     },
     //changes the Index again to add a random enemy 
    setFight: function() {

@@ -18,14 +18,24 @@ canvas{
   z-index:-1;
 }
 
+/* #player-container, #enemy-container {
+  display: none
+} */
+
+#avatar-name {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
 img {
   width: 160px;
 }
-
-#player-container, #enemy-container {
-  display: none
+.hero{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-
 .modal-bg{
   position: fixed;
   width: 100%;
@@ -46,8 +56,8 @@ img {
 }
 .modal{
   background-color: aliceblue;
-  width: 30%;
-  height: 25%;
+  width: 25%;
+  height: 15%;
   font-family:Cinzel;
   display:flex;
   justify-content: space-around;
@@ -94,7 +104,10 @@ p {
   font-family: Cinzel;
   text-shadow: 2px 2px 2px black;
 }
-
+.section{
+  visibility: hidden;
+  opacity: 0;
+}
 .container {
   display:flex;  
   flex-flow: column wrap;
@@ -105,6 +118,7 @@ p {
   border: solid black;
   max-width: 20%;
   max-height: 20%;
+  
 }
 
 .aside {
@@ -169,7 +183,7 @@ max-width: 100%;
   border: double rgb(199, 198, 198);
   background: rgb(70, 67, 67);
   border-bottom: double rgb(228, 12, 12);
-  max width: 100%;
+  max-width: 100%;
 }
 
 .mana {
@@ -244,7 +258,7 @@ line-height: 50px;
 min-width: 50px;
 outline: none;
   vertical-align: middle;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   
 text-shadow:
       0 3px 20px red,
@@ -253,6 +267,7 @@ text-shadow:
   4px -5px 6px yellow,
   -4px -10px 10px yellow,
   0 -10px 30px yellow;
+
 animation: 1s Blazing infinite alternate linear;
 }
 
