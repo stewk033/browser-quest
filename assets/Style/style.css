@@ -28,7 +28,7 @@ canvas{
   align-items: center;
 }
 img {
-  width: 160px;
+  width: 300px;
 }
 .hero{
   display:flex;
@@ -163,7 +163,6 @@ max-width: 100%;
 
 
 .player-image {
-  text-align: left;
   background: rgb(70, 67, 67);
   border: double rgb(56, 74, 245);
   max-width:100%;
@@ -171,7 +170,6 @@ max-width: 100%;
 }
 
 .enemy-image {
-  text-align: left;
   background: rgb(70, 67, 67);
   border: double rgb(117, 7, 7);
   max-width:100%;
