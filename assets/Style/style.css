@@ -28,6 +28,7 @@ img {
   display:flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .modal-bg{
   position: fixed;
@@ -49,8 +50,8 @@ img {
 }
 .modal{
   background-color: aliceblue;
-  width: 30%;
-  height: 25%;
+  width: 25%;
+  height: 15%;
   font-family:Cinzel;
   display:flex;
   justify-content: space-around;

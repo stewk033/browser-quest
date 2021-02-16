@@ -56,18 +56,19 @@ let gameManager = {
         this.setPreFight();
     },
     // when character is chosen the reset player function 
+    //(classType, health, mana, strength, agility, speed)
     resetPlayer: function(classType){
         switch (classType){
             case "Minotaur":
-                player = new Player(classType, 200, 0, 200, 100, 50);
+                player = new Player(classType, 150, 0, 200, 100, 50);
 
            break;
            case "Satyr":
-            player = new Player(classType, 80, 0, 50, 200, 50);
+            player = new Player(classType, 100, 25, 75, 150, 100);
 
        break;
        case "Quillboar":
-        player = new Player(classType, 100, 0, 200, 150, 200);
+        player = new Player(classType, 125, 0, 150, 200, 150);
 
         break;
         

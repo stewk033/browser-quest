@@ -20,39 +20,40 @@
     </div>
 
     
-    <form id="avatar-name">
-        <label for="playerName">Please Name Your Hero:</label><br>
-        <input type="text" id="saved-name" name="saved-name"><button type="submit">Save</button><br>
-        <button id="random">Random Name</button>
-    </form>
-    <ol id="name-list"></ol>
+    
 
    
    
     <div id="hero" class="hero">
+        <h2>Please Select a Hero  </h2>
         <a href="#"onclick="gameManager.setGameStart('Minotaur')">
             <img src="./Assets/images/minotaur.jpg"alt="minotaur">
             <div>
                <h3>Minotaur</h3> 
-               <p>placeholder txt</p>
+               <p>The mighty Minotaur may not be the quickest fighter but what they lack in speed they make up for in strength and constitution.</p>
             </div>
         </a>
         <a href="#"onclick="gameManager.setGameStart('Satyr')">
             <img src="./Assets/images/satyr.jpg"alt="satyr">
             <div>
                <h3>Satyr</h3> 
-               <p>placeholder txt</p>
+               <p>The sneaky Satyr is a cunning hero who uses his mana to increase his fighting power since he is the weakest of the heros. </p>
             </div>
         </a>
         <a href="#"onclick="gameManager.setGameStart('Quillboar')">
             <img src="Assets/images/quillboar.jpg"alt="quillboar">
             <div>
                <h3>Quillboar</h3> 
-               <p>placeholder txt</p>
+               <p>The Quarrelsome Quillboar is a fast ferocious fighter who is able to attack oppentents with blazing speed and agility. </p>
             </div>
         </a>
     </div>
-    
+    <form id="avatar-name">
+        <label for="playerName">Please Name Your Hero:</label><br>
+        <input type="text" id="saved-name" name="saved-name"><button type="submit">Save</button><br>
+        <button id="random">Random Name</button>
+    </form>
+    <ol id="name-list"></ol>
 
 
     
