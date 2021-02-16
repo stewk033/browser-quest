@@ -105,7 +105,7 @@ let gameManager = {
             let getactions = document.querySelector(".Blazing");
            
             getactions.innerHTML = '<a href="#" class="btn-prefight" onclick="gameManager.setFight()">Search for enemy!</a>';
-            getarena.style.visibility = "visible";
+            
             avatarName.style.display = "none";
             enemyContainer.style.display = "flex";
             playerContainer.style.display = "flex";
