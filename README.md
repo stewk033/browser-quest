@@ -17,7 +17,7 @@ In this assignment we are creating a simple browser based role-playing game that
 - _THEN I am given a option to attack_
 - _WHEN I attack_
 - _THEN I continue to engage the enemy until defeat_
-- _When the enemy is defeated_
+- _WHEN the enemy is defeated_
 - _THEN my journey continues until I reach the next enemy, repeating the process_
 - _WHEN I lose a battle_
 - _THEN the game is over_
