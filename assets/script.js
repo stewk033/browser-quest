@@ -42,3 +42,12 @@ window.onresize = function() {
     context.fillText("Browser Quest", 10, 50)
 }
 
+// function play (){ 
+// var audio = new Audio("./assets/sounds/gamemusic.mp3");
+// audio.play();
+// };
+
+// document.getElementById("myBtn").addEventListener("click",function(){
+//     document.getElementById("myAudio").play();
+//   }
+//   );
